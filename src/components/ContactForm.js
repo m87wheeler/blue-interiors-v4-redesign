@@ -16,8 +16,8 @@ const FormContainer = styled.form`
     border: none;
     margin-bottom: 3vh;
     background-color: $primaryDark;
-    color: $white;
-    border-bottom: 2px solid $white;
+    color: var(--text-white);
+    border-bottom: 2px solid var(--text-white);
   }
 
   input:focus,
@@ -45,12 +45,12 @@ const FormContainer = styled.form`
   }
 
   option {
-    background-color: $white;
+    background-color: var(--text-white);
     color: $text;
   }
 
   input[type="submit"] {
-    background-color: $white;
+    background-color: var(--text-white);
     color: $primaryDark;
   }
 
@@ -60,7 +60,7 @@ const FormContainer = styled.form`
 
   label {
     margin-left: 10%;
-    color: $white;
+    color: var(--text-white);
   }
 
   #form-file {
@@ -70,7 +70,7 @@ const FormContainer = styled.form`
 
   .submit-response {
     font-size: 1.75em;
-    color: $white;
+    color: var(--text-white);
     margin-left: 10%;
   }
 

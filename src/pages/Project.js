@@ -37,7 +37,7 @@ const ProjectPostContainer = styled.main`
       width: 250px;
       height: 250px;
       overflow: hidden;
-      border: 5px solid $white;
+      border: 5px solid var(--text-white);
 
       img {
         position: absolute;
