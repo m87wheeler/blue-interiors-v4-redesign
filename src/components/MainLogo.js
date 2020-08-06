@@ -6,7 +6,7 @@ import mainLogo from "../assets/images/vector-images/logo384.png"
 
 const LogoContainer = styled.div`
   position: absolute;
-  top: 0;
+  top: 5vh;
   left: 0;
   width: 100%;
   height: 11rem;
@@ -14,9 +14,9 @@ const LogoContainer = styled.div`
   z-index: 99;
 
   @media (min-width: 800px) {
-    top: 3rem;
-    left: 15%;
-    transform: none;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
     width: 9.6rem;
     height: 9.6rem;
     padding: 0;

@@ -7,8 +7,7 @@ import { dateFormat } from "../assets/logic/dateFormat"
 import Button from "../components/Button"
 
 const BlogPostContainer = styled.main`
-  padding-top: 30vh;
-  margin: 5vh 0 0;
+  padding-top: 35vh;
   width: 100%;
 
   img {
@@ -152,7 +151,7 @@ const BlogPostContainer = styled.main`
   }
 
   @media (min-width: 800px) {
-    padding-top: 0;
+    padding-top: 15vh;
     width: 80%;
     margin: -30px 10% 0;
 
@@ -221,7 +220,7 @@ const BlogPost = props => {
   }, [loading, url])
 
   return (
-    <BlogPostContainer>
+    <BlogPostContainer className={props.className}>
       {loading ? (
         <p>Loading...</p>
       ) : (

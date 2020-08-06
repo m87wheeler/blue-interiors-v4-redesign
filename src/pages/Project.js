@@ -7,6 +7,7 @@ import Button from "../components/Button"
 
 const ProjectPostContainer = styled.main`
   grid-area: page;
+  padding-top: 35vh;
 
   .project-post-container {
     width: 100%;
@@ -108,7 +109,7 @@ const ProjectPostContainer = styled.main`
   }
 
   @media (min-width: 800px) {
-    padding-top: 0;
+    padding-top: 10vh;
     margin-top: -30px;
 
     .project-post-container {
