@@ -24,6 +24,7 @@ const LogoContainer = styled.div`
 
   @media (min-width: 1280px) {
     top: 1rem;
+    left: 20%;
     position: fixed;
     background: transparent;
   }
