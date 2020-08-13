@@ -118,7 +118,6 @@ const LogoText = styled.h1`
 
 const MainLogo = ({ className }) => {
   let location = useLocation()
-  console.log(location.pathname)
 
   if (location.pathname === "/" && window.innerWidth < 800) {
     console.log("big logo")
