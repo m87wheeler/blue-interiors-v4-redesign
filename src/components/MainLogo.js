@@ -56,14 +56,14 @@ const LandingMainLogo = styled(LogoContainer)`
   }
 
   & img {
-    top: 8rem;
+    top: 4rem;
     width: 16rem;
     height: 16rem;
     filter: brightness(1000%);
   }
 
   & h1 {
-    top: 25rem;
+    top: 21rem;
     font-size: 2.2rem;
     color: var(--text-white);
   }

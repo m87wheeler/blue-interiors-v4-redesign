@@ -56,6 +56,7 @@ const StyledButton = styled.button`
 const Button = props => {
   return (
     <StyledButton
+      className={props.className}
       center={props.center}
       primary={props.primary}
       border={props.border}

@@ -13,6 +13,7 @@ import BlogCollection from "./pages/BlogCollection"
 import BlogPost from "./pages/BlogPost"
 import Inspiration from "./pages/Inspiration"
 import Contact from "./pages/Contact"
+import PageNotFound from "./pages/PageNotFound"
 
 // Component Imports
 import NavToggle from "./components/NavToggle"
@@ -179,6 +180,7 @@ const App = props => {
             <Route path="/blog/:slug" component={BlogPost} />
             <Route path="/inspiration" component={Inspiration} />
             <Route path="/contact" component={Contact} />
+            <Route path="*" exact={true} component={PageNotFound} />
           </Switch>
           <Footer />
         </AppWrapper>
