@@ -1,4 +1,5 @@
-import React, { Link } from "react"
+import React from "react"
+import { Link } from "react-router-dom"
 import { useLocation } from "react-router-dom"
 import styled from "styled-components"
 
@@ -128,7 +129,7 @@ const MainLogo = ({ className }) => {
     )
   } else {
     return (
-      <Link to="/">
+      <Link>
         <LogoContainer className={className}>
           <MainLogoImage src={mainLogo} alt="Blue Interiors Logo" />
           <LogoText>INTERIORS</LogoText>
