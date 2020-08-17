@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Link } from "react"
 import { useLocation } from "react-router-dom"
 import styled from "styled-components"
 
@@ -120,7 +120,6 @@ const MainLogo = ({ className }) => {
   let location = useLocation()
 
   if (location.pathname === "/" && window.innerWidth < 800) {
-    console.log("big logo")
     return (
       <LandingMainLogo className={className}>
         <MainLogoImage src={mainLogo} alt="Blue Interiors Logo" />
@@ -128,12 +127,13 @@ const MainLogo = ({ className }) => {
       </LandingMainLogo>
     )
   } else {
-    console.log("small logo")
     return (
-      <LogoContainer className={className}>
-        <MainLogoImage src={mainLogo} alt="Blue Interiors Logo" />
-        <LogoText>INTERIORS</LogoText>
-      </LogoContainer>
+      <Link to="/">
+        <LogoContainer className={className}>
+          <MainLogoImage src={mainLogo} alt="Blue Interiors Logo" />
+          <LogoText>INTERIORS</LogoText>
+        </LogoContainer>
+      </Link>
     )
   }
 }
