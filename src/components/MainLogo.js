@@ -129,7 +129,7 @@ const MainLogo = ({ className }) => {
     )
   } else {
     return (
-      <Link>
+      <Link to="/" exact>
         <LogoContainer className={className}>
           <MainLogoImage src={mainLogo} alt="Blue Interiors Logo" />
           <LogoText>INTERIORS</LogoText>
