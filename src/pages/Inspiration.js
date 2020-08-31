@@ -36,10 +36,10 @@ const Projects = () => {
   const [isLoading, setIsLoading] = useState(true)
   const [mediaData, setMediaData] = useState([])
 
-  const moodboardUrl =
-    "https://api.cosmicjs.com/v1/0206e2d0-74c0-11ea-8c41-cf1a15c2a736/media?folder=mood-boards&pretty=true&read_key=rJuCAICzaLkFBbQv9WflxvHiMWsivSEb8fO2vhT9UFA39BpIDp&limit=20&props=imgix_url"
-  const paletteUrl =
-    "https://api.cosmicjs.com/v1/0206e2d0-74c0-11ea-8c41-cf1a15c2a736/media?folder=colour-palettes&pretty=true&read_key=rJuCAICzaLkFBbQv9WflxvHiMWsivSEb8fO2vhT9UFA39BpIDp&limit=20&props=imgix_url"
+  // const moodboardUrl =
+  //   "https://api.cosmicjs.com/v1/0206e2d0-74c0-11ea-8c41-cf1a15c2a736/media?folder=mood-boards&pretty=true&read_key=rJuCAICzaLkFBbQv9WflxvHiMWsivSEb8fO2vhT9UFA39BpIDp&limit=20&props=imgix_url"
+  // const paletteUrl =
+  //   "https://api.cosmicjs.com/v1/0206e2d0-74c0-11ea-8c41-cf1a15c2a736/media?folder=colour-palettes&pretty=true&read_key=rJuCAICzaLkFBbQv9WflxvHiMWsivSEb8fO2vhT9UFA39BpIDp&limit=20&props=imgix_url"
   const interiorsUrl =
     "https://api.cosmicjs.com/v1/0206e2d0-74c0-11ea-8c41-cf1a15c2a736/media?folder=interiors&pretty=true&read_key=rJuCAICzaLkFBbQv9WflxvHiMWsivSEb8fO2vhT9UFA39BpIDp&limit=20&props=imgix_url,"
 
