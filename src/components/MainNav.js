@@ -27,9 +27,9 @@ const NavContainer = styled.nav`
     left: 0;
     width: 100%;
     height: 10rem;
-    background: white;
     transition: none;
     overflow: visible;
+    background: rgba(255, 255, 255, 0.8);
     z-index: 99;
   }
 `
@@ -97,15 +97,14 @@ const NavUnorderedList = styled.ul`
     top: 0;
     left: 50%;
     margin: 0;
-    width: auto;
+    width: 50%;
     height: 100%;
     z-index: 9999;
     animation: none;
     opacity: 1;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     padding: 2.25rem 0;
+    display: flex;
+    flex-flow: row wrap;
   }
 `
 
@@ -121,13 +120,32 @@ const NavLink = styled.li`
   text-align: center;
 
   @media (min-width: 1280px) {
+    display: inline-block;
     width: 13rem;
     font-size: 1rem;
     font-weight: 400;
     color: var(--text-black);
+    letter-spacing: 0.1rem;
+    transition: all 0.2s ease-in-out;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      transition: all 0.2s ease-in-out;
+      z-index: -1;
+      background: var(--primary);
+    }
 
     &:hover {
-      text-decoration: underline;
+      color: white;
+
+      &::after {
+        width: 100%;
+      }
     }
   }
 `
@@ -151,9 +169,9 @@ const MainNav = props => {
         <Link to="/blog" onClick={props.toggleNav}>
           <NavLink>Blog</NavLink>
         </Link>
-        {/* <Link to="/inspiration" onClick={props.toggleNav}>
+        <Link to="/inspiration" onClick={props.toggleNav}>
           <NavLink>Inspiration</NavLink>
-        </Link> */}
+        </Link>
         <Link to="/contact" onClick={props.toggleNav}>
           <NavLink>Contact</NavLink>
         </Link>
